@@ -27,19 +27,6 @@
         </p>
       </div>
     </div>
-    <nav class="level">
-      <div class="level-left is-mobile">
-        <%= link_to message, class: "level-item" do %>
-          <span class="icon has-text-info"><i class="fas fa-info-circle" aria-hidden="true"></i></span>
-        <% end %>
-        <%= link_to edit_message_path(message), class: "level-item" do %>
-          <span class="icon"><i class="fas fa-pencil" aria-hidden="true"></i></span>
-        <% end %>
-        <%= link_to message, method: :delete, data: { confirm: "Are you sure you want to delete this message?" } do %>
-          <span class="icon"><i class="fas fa-trash-o" aria-hidden="true"></i></span>
-        <% end %>
-      </div>
-    </nav>
     
   </article>
 </div>
