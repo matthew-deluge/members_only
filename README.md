@@ -1,24 +1,10 @@
-# README
+# Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple web app that allows visitors to see messages written on the site, but only allows members (i.e. people who have signed up) to see the authors of those messages, or to write messages themselves.
 
-Things you may want to cover:
+Uses the Devise Gem for authentification, Simple Form for forms, and Bulma CSS framework.
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
