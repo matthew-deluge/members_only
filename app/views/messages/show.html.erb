@@ -1,17 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<!--<p>
-  <strong>Title:</strong>
-  <%= @message.title %>
-</p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @message.body %>
-</p>-->
-
-
-
+<div class='column is-half is-offset-one-quarter'>
 
 <div class="box">
   <article class="media">
@@ -25,7 +15,13 @@
           <% end %>
         </p>
       </div>
+    
 
-<%= link_to 'Edit', edit_message_path(@message) %>
+<%= link_to 'Edit', edit_message_path(@message), class: "button" %>
 <%= link_to 'Back', messages_path %>
 <%= link_to 'Delete', @message.destroy %>
+
+  </div>
+</article>
+</div>
+</div>

@@ -19,12 +19,16 @@
     <div class="media-content">
       <div class="content">
         <p>
-          <p class="title is-5"><%=link_to message.title, message_url(message)%></p>
+          <p class="title is-5"><%=message.title%></p>
           <p><%=message.body%></p>
           <% if user_signed_in?%>
             <p><em><%="by #{message.user.username}" %></em><p>
           <% end %>
         </p>
+          <% if user_signed_in? && current_user.id == message.user_id %>
+            <nav class="level">
+                <%= link_to "Delete", message, method: :delete, class:"button is-black", data: { confirm: "Are you sure you want to delete this tweeet?" } %>
+            <%end%>
       </div>
     </div>
     
