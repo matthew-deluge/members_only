@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<!--<p>
   <strong>Title:</strong>
   <%= @message.title %>
 </p>
@@ -8,7 +8,23 @@
 <p>
   <strong>Body:</strong>
   <%= @message.body %>
-</p>
+</p>-->
+
+
+
+
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <p class="title is-5"><%=@message.title%></p>
+          <p><%=@message.body%></p>
+          <% if user_signed_in?%>
+            <p><em><%="by #{@message.user.username}" %></em><p>
+          <% end %>
+        </p>
+      </div>
 
 <%= link_to 'Edit', edit_message_path(@message) %>
 <%= link_to 'Back', messages_path %>

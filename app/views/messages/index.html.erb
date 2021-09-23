@@ -19,7 +19,7 @@
     <div class="media-content">
       <div class="content">
         <p>
-          <p class="title is-5"><%=message.title%></p>
+          <p class="title is-5"><%=link_to message.title, message_url(message)%></p>
           <p><%=message.body%></p>
           <% if user_signed_in?%>
             <p><em><%="by #{message.user.username}" %></em><p>
